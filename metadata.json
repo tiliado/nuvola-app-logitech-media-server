@@ -1,0 +1,11 @@
+{
+    "id": "logitech_media_server",
+    "name": "Logitech Media Server",
+    "maintainer_name": "Steffen Coenen?",
+    "maintainer_link": "https://github.com/FIXME",
+    "version_major": 2,
+    "version_minor": 0,
+    "api_major": 3,
+    "api_minor": 0,
+    "categories": "AudioVideo;Audio;"
+}

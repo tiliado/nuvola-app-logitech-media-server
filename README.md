@@ -6,8 +6,12 @@ Integration of Logitech Media Server into your linux desktop via
  
 Known Issues
 ------------
-Works currently only with the developer version of LMS (7.9)
+Play / Pause is not displayed correctly with the Version 7.9 (unstable)
 
+Support
+-------
+
+Report bugs and issues at <https://github.com/tiliado/nuvola-app-logitech-media-server/issues>.
 
 Installation
 ------------

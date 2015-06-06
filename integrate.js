@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Steffen Coenen <steffen@steffen-coenen.de>
+ * Copyright 2015 Steffen Coenen <steffen@steffen-coenen.de>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met: 
@@ -173,7 +173,7 @@ WebApp.update = function()
 	player.setCanGoNext(true)
 
 	var state = PlaybackState.UNKNOWN
-	var play_pause = document.getElementById('ext-gen43'); // ? ext-gen42 7.8/7.9
+	var play_pause = document.getElementById('ext-gen42'); // change to ext-gen43 for 7.9 unstable
 	try {
 		var pp_pressed = play_pause.getAttribute("title");
 		state = (pp_pressed == "Pause") ? PlaybackState.PLAYING : PlaybackState.PAUSED;
@@ -202,7 +202,6 @@ WebApp._onActionActivated = function(emitter, name, param)
 		document.getElementById('ext-gen42').click();
 	break;
     case PlayerAction.PLAY:
-	if (this.state != Nuvola.STATE_PLAYING)
 		document.getElementById('ext-gen42').click();
 	break;
     case PlayerAction.PAUSE:

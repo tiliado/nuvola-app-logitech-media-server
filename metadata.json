@@ -1,5 +1,5 @@
 {
-    "id": "lms",
+    "id": "logitech_media_server",
     "name": "Logitech Media Server",
     "home_url": "http://localhost:9000",
     "allowed_uri": ".*/nuvolaplayer/services/lms/home.html|https?://.*",

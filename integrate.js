@@ -137,11 +137,11 @@ WebApp.update = function()
 	try{
 		var song = document.getElementById('ctrlCurrentTitle').firstChild;
 		track.title = song.innerText || song.textContent;
-		//songtosplit = song.innerText || song.textContent;
+		var songtosplit = song.innerText || song.textContent;
 		// Kills track number if there is any one.
-		//if (song.indexOf(". ",0) > 0){
-		//	track.title = songtosplit.split(/\.(.+)?/)[1].trim();
-		//}         
+		if (songtosplit.indexOf(". ",0) > 0){
+			track.title = songtosplit.split(/\.(.+)?/)[1].trim();
+		}         
 	}
 		catch (e){
 			track.title = null;

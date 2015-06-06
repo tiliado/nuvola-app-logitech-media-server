@@ -6,7 +6,7 @@ Integration of Logitech Media Server into your linux desktop via
  
 Known Issues
 ------------
-IP setting does not work , so without changing the code only localhost:9000 works.
+Works currently only with the developer version of LMS (7.9)
 
 
 Installation

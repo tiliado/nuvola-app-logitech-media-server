@@ -35,7 +35,12 @@ var ADDRESS_CUSTOM = "custom";
 var HOST = "app.host";
 var PORT = "app.port";
 
+// Create new WebApp prototype
 var WebApp = Nuvola.$WebApp();
+
+// Handy aliases
+var PlaybackState = Nuvola.PlaybackState;
+var PlayerAction = Nuvola.PlayerAction;
 
 // Translations
 var _ = Nuvola.Translate.gettext;
@@ -88,15 +93,6 @@ WebApp.appendPreferences = function(values, entries)
     entries.push(["string", HOST, "Host"]);
     entries.push(["string", PORT, "Port"]);
 }
-
-
-
-// Handy aliases
-var PlaybackState = Nuvola.PlaybackState;
-var PlayerAction = Nuvola.PlayerAction;
-
-// Create new WebApp prototype
-var WebApp = Nuvola.$WebApp();
 
 // Initialization routines
 WebApp._onInitWebWorker = function(emitter)

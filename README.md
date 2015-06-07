@@ -3,10 +3,6 @@ Logitech Media Server for Nuvola Player 3
 
 Integration of Logitech Media Server into your linux desktop via
 [Nuvola Player](https://github.com/tiliado/nuvolaplayer).
- 
-Known Issues
-------------
-Play / Pause is not displayed correctly with the Version 7.9 (unstable)
 
 Support
 -------

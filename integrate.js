@@ -199,22 +199,22 @@ WebApp._onActionActivated = function(emitter, name, param)
  switch (name)
     {
     case PlayerAction.TOGGLE_PLAY:
-		document.getElementById('ext-gen42').click();
+		document.getElementById('ctrlTogglePlay').firstChild.click();
 	break;
     case PlayerAction.PLAY:
-		document.getElementById('ext-gen42').click();
+		document.getElementById('ctrlTogglePlay').firstChild.click();
 	break;
     case PlayerAction.PAUSE:
-		document.getElementById('ext-gen42').click();
+		document.getElementById('ctrlTogglePlay').firstChild.click();
 	break;
     case PlayerAction.STOP:
-		document.getElementById('ext-gen42').click();
+		document.getElementById('ctrlTogglePlay').firstChild.click();
 	break;
     case PlayerAction.PREV_SONG:
-		document.getElementById('ext-gen40').click();
+		document.getElementById('ctrlPrevious').firstChild.click()
 	break;
     case PlayerAction.NEXT_SONG:
-		document.getElementById('ext-gen44').click();
+		document.getElementById('ctrlNext').firstChild.click();
 	break;
     }
 }

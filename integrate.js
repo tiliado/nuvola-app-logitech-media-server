@@ -174,7 +174,7 @@ WebApp.update = function()
 
 	var state = PlaybackState.UNKNOWN
 	try {
-		state = ((document.getElementById("ctrlTogglePlay").firstChild.className.indexOf("btn-play")>-1))? PlaybackState.PLAYING : PlaybackState.PAUSED;
+		state = ((document.getElementById("ctrlTogglePlay").firstChild.className.indexOf("btn-play")>-1))? PlaybackState.PAUSED : PlaybackState.PLAYING;
 		}
 	catch (e) {
 		state = PlaybackState.UNKNOWN

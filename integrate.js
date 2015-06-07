@@ -120,6 +120,7 @@ WebApp._onPageReady = function()
 WebApp.update = function()
 {
     var track = {}
+
 	var artistDiv = document.getElementById('ctrlCurrentArtist');
 	try{
 		var artist = artistDiv.firstChild;
@@ -191,7 +192,7 @@ WebApp._onActionActivated = function(emitter, name, param)
 	switch (name)
 	{
 		case PlayerAction.TOGGLE_PLAY:
-			document.getElementById('ctrlTogglePlay').click();
+			document.getElementById('ctrlTogglePlay').firstChild.click();
 		break;
 		case PlayerAction.PLAY:
 			document.getElementById('ctrlTogglePlay').firstChild.click();

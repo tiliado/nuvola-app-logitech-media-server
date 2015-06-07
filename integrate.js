@@ -58,20 +58,20 @@ WebApp._onHomePageRequest = function(emitter, result)
 
 WebApp._onInitAppRunner = function(emitter)
 {
-    Nuvola.WebApp._onInitAppRunner.call(this, emitter);
-
-    Nuvola.config.setDefault(ADDRESS, ADDRESS_DEFAULT);
-    Nuvola.config.setDefault(HOST, "");
-    Nuvola.config.setDefault(PORT, "");
-
-    Nuvola.core.connect("InitializationForm", this);
-    Nuvola.core.connect("PreferencesForm", this);
+	Nuvola.WebApp._onInitAppRunner.call(this, emitter);
+	
+	Nuvola.config.setDefault(ADDRESS, ADDRESS_DEFAULT);
+	Nuvola.config.setDefault(HOST, "");
+	Nuvola.config.setDefault(PORT, "");
+	
+	Nuvola.core.connect("InitializationForm", this);
+	Nuvola.core.connect("PreferencesForm", this);
 }
 
 WebApp._onInitializationForm = function(emitter, values, entries)
 {
-    if (!Nuvola.config.hasKey(ADDRESS))
-        this.appendPreferences(values, entries);
+	if (!Nuvola.config.hasKey(ADDRESS))
+	    this.appendPreferences(values, entries);
 }
 
 WebApp._onPreferencesForm = function(emitter, values, entries)
@@ -81,17 +81,17 @@ WebApp._onPreferencesForm = function(emitter, values, entries)
 
 WebApp.appendPreferences = function(values, entries)
 {
-    values[ADDRESS] = Nuvola.config.get(ADDRESS);
-    values[HOST] = Nuvola.config.get(HOST);
-    values[PORT] = Nuvola.config.get(PORT);
-    entries.push(["header", _("Logitech Media Server")]);
-    entries.push(["label", _("Address of your Logitech Media Server")]);
-    entries.push(["option", ADDRESS, ADDRESS_DEFAULT,
-        _("use default address ('localhost:9000')"), null, [HOST, PORT]]);
-    entries.push(["option", ADDRESS, ADDRESS_CUSTOM,
-        _("use custom address"), [HOST, PORT], null]);
-    entries.push(["string", HOST, "Host"]);
-    entries.push(["string", PORT, "Port"]);
+	values[ADDRESS] = Nuvola.config.get(ADDRESS);
+	values[HOST] = Nuvola.config.get(HOST);
+	values[PORT] = Nuvola.config.get(PORT);
+	entries.push(["header", _("Logitech Media Server")]);
+	entries.push(["label", _("Address of your Logitech Media Server")]);
+	entries.push(["option", ADDRESS, ADDRESS_DEFAULT,
+	    _("use default address ('localhost:9000')"), null, [HOST, PORT]]);
+	entries.push(["option", ADDRESS, ADDRESS_CUSTOM,
+	    _("use custom address"), [HOST, PORT], null]);
+	entries.push(["string", HOST, "Host"]);
+	entries.push(["string", PORT, "Port"]);
 }
 
 // Initialization routines
@@ -120,7 +120,6 @@ WebApp._onPageReady = function()
 WebApp.update = function()
 {
     var track = {}
-
 	var artistDiv = document.getElementById('ctrlCurrentArtist');
 	try{
 		var artist = artistDiv.firstChild;
@@ -173,19 +172,12 @@ WebApp.update = function()
 	player.setCanGoNext(true)
 
 	var state = PlaybackState.UNKNOWN
-	var play_pause = document.getElementById('ext-gen42'); // change to ext-gen43 for 7.9 unstable
 	try {
-		var pp_pressed = play_pause.getAttribute("title");
-		state = (pp_pressed == "Pause") ? PlaybackState.PLAYING : PlaybackState.PAUSED;
-	        }
+		state = ((document.getElementById("ctrlTogglePlay").firstChild.className.indexOf("btn-play")>-1))? PlaybackState.PLAYING : PlaybackState.PAUSED;
+		}
 	catch (e) {
 		state = PlaybackState.UNKNOWN
 	} 
-	
-
-
-
-
 
     player.setPlaybackState(state);
 
@@ -196,27 +188,27 @@ WebApp.update = function()
 // Handler of playback actions
 WebApp._onActionActivated = function(emitter, name, param)
 {
- switch (name)
-    {
-    case PlayerAction.TOGGLE_PLAY:
-		document.getElementById('ext-gen42').click();
-	break;
-    case PlayerAction.PLAY:
-		document.getElementById('ext-gen42').click();
-	break;
-    case PlayerAction.PAUSE:
-		document.getElementById('ext-gen42').click();
-	break;
-    case PlayerAction.STOP:
-		document.getElementById('ext-gen42').click();
-	break;
-    case PlayerAction.PREV_SONG:
-		document.getElementById('ext-gen40').click();
-	break;
-    case PlayerAction.NEXT_SONG:
-		document.getElementById('ext-gen44').click();
-	break;
-    }
+	switch (name)
+	{
+		case PlayerAction.TOGGLE_PLAY:
+			document.getElementById('ctrlTogglePlay').click();
+		break;
+		case PlayerAction.PLAY:
+			document.getElementById('ctrlTogglePlay').firstChild.click();
+		break;
+		case PlayerAction.PAUSE:
+			document.getElementById('ctrlTogglePlay').firstChild.click();
+		break;
+		case PlayerAction.STOP:
+			document.getElementById('ctrlTogglePlay').firstChild.click();
+		break;
+		case PlayerAction.PREV_SONG:
+			document.getElementById('ctrlPrevious').firstChild.click();
+		break;
+		case PlayerAction.NEXT_SONG:
+			document.getElementById('ctrlNext').firstChild.click();
+		break;
+	}
 }
 
 WebApp.start();

@@ -180,6 +180,15 @@ WebApp.update = function()
 		state = PlaybackState.UNKNOWN
 	} 
 
+	//Set state to unknown if there is no available song
+	if(state==!track.title){
+		state=PlaybackState.UNKNOWN;
+		player.setCanPause(false);
+		player.setCanPlay(false);
+		player.setCanGoPrev(false);
+		player.setCanGoNext(false)
+	}
+		
     player.setPlaybackState(state);
 
     // Schedule the next update

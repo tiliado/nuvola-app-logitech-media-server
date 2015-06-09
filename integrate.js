@@ -167,11 +167,6 @@ WebApp.update = function()
 
 	player.setTrack(track);
 
-	player.setCanPause(true)
-	player.setCanPlay(true)
-	player.setCanGoPrev(true)
-	player.setCanGoNext(true)
-
 	var state = PlaybackState.UNKNOWN
 	try {
 		state = ((document.getElementById("ctrlTogglePlay").firstChild.className.indexOf("btn-play")>-1))? PlaybackState.PAUSED : PlaybackState.PLAYING;
@@ -187,8 +182,13 @@ WebApp.update = function()
 		player.setCanPlay(false);
 		player.setCanGoPrev(false);
 		player.setCanGoNext(false)
-	}
-		
+	} else {
+		player.setCanPause(true)
+		player.setCanPlay(true)
+		player.setCanGoPrev(true)
+		player.setCanGoNext(true)
+	}		
+
     player.setPlaybackState(state);
 
     // Schedule the next update

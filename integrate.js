@@ -176,7 +176,7 @@ WebApp.update = function()
 	} 
 
 	//Set state to unknown if there is no available song
-	if(state==!track.title){
+	if(!track.title){
 		state=PlaybackState.UNKNOWN;
 		player.setCanPause(false);
 		player.setCanPlay(false);

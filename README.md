@@ -22,3 +22,8 @@ Copyright
   - Copyright 2015 Steffen Coenen <steffen@steffen-coenen.de>
   - Copyright 2014 Jiří Janoušek <janousek.jiri@gmail.com>
   - License: [2-Clause BSD-license](./LICENSE)
+
+    File src/icon.svg
+    Copyright 2011 Arturo Torres Sánchez <arturo.ilhuitemoc@gmail.com>
+    Copyright 2011 Alexander King
+    License: CC-BY-3.0

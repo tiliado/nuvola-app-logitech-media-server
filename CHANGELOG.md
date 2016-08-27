@@ -5,3 +5,4 @@ Changelog
 --------------------
 
   * Added a complete set of icons with various sizes.
+  * Added information about contributing to the script.

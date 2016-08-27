@@ -15,7 +15,7 @@
    id="svg3136"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="icon.svg">
+   sodipodi:docname="icon-sm.svg">
   <defs
      id="defs3138">
     <linearGradient
@@ -48,10 +48,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.545766"
-     inkscape:cx="61.030712"
+     inkscape:cx="-6.3736236"
      inkscape:cy="23.364323"
      inkscape:document-units="px"
-     inkscape:current-layer="g2994"
+     inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -66,19 +66,19 @@
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="1,0"
-       position="-29.612783,69.942574"
+       position="-64.866097,31.868995"
        id="guide3089" />
     <sodipodi:guide
        orientation="0,1"
-       position="-3.9483711,-16.92159"
+       position="81.223634,-32.997101"
        id="guide3091" />
     <sodipodi:guide
        orientation="0,1"
-       position="68.532441,76.429183"
+       position="-37.509525,91.940641"
        id="guide3093" />
     <sodipodi:guide
        orientation="1,0"
-       position="75.301077,70.2246"
+       position="121.83545,69.378521"
        id="guide3095" />
   </sodipodi:namedview>
   <metadata
@@ -113,12 +113,12 @@
     </g>
     <g
        id="g3058"
-       transform="matrix(0.10520848,0,0,0.10520848,317.04505,739.47658)">
+       transform="matrix(0.16809365,0,0,0.16809365,301.5689,729.65951)">
       <g
          id="g2994">
         <g
            id="g3880"
-           transform="matrix(2.5553961,0,0,2.5553961,1331.255,-53.996634)">
+           transform="matrix(1.7202882,0,0,1.7202882,972.9609,25.568601)">
           <path
              transform="matrix(9.5049372,0,0,9.5049372,-85.667049,-99.47259)"
              sodipodi:nodetypes="szszs"

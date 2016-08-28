@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="63.935692"
-   height="63.844788"
+   width="28"
+   height="28"
    id="svg3136"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="icon.svg">
+   sodipodi:docname="icon-xs.svg">
   <defs
      id="defs3138">
     <linearGradient
@@ -48,10 +48,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.545766"
-     inkscape:cx="61.030712"
-     inkscape:cy="23.364323"
+     inkscape:cx="-40.639845"
+     inkscape:cy="0.80220458"
      inkscape:document-units="px"
-     inkscape:current-layer="g2994"
+     inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -66,19 +66,19 @@
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="1,0"
-       position="-29.612783,69.942574"
+       position="-93.632801,-3.1022894"
        id="guide3089" />
     <sodipodi:guide
        orientation="0,1"
-       position="-3.9483711,-16.92159"
+       position="92.78672,-11.845111"
        id="guide3091" />
     <sodipodi:guide
        orientation="0,1"
-       position="68.532441,76.429183"
+       position="-4.5124246,69.660549"
        id="guide3093" />
     <sodipodi:guide
        orientation="1,0"
-       position="75.301077,70.2246"
+       position="131.70638,10.152956"
        id="guide3095" />
   </sodipodi:namedview>
   <metadata
@@ -97,9 +97,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-308.03215,-729.01122)">
+     transform="translate(-308.03215,-764.85601)">
     <g
-       transform="translate(308,728.88816)"
+       transform="matrix(0.43794005,0,0,0.4385636,308.01807,764.80204)"
        style="display:inline"
        id="g3852">
       <rect
@@ -113,12 +113,12 @@
     </g>
     <g
        id="g3058"
-       transform="matrix(0.10520848,0,0,0.10520848,317.04505,739.47658)">
+       transform="matrix(0.08611502,0,0,0.08623763,301.80461,762.51658)">
       <g
          id="g2994">
         <g
            id="g3880"
-           transform="matrix(2.5553961,0,0,2.5553961,1331.255,-53.996634)">
+           transform="matrix(1.7202882,0,0,1.7202882,972.9609,25.568601)">
           <path
              transform="matrix(9.5049372,0,0,9.5049372,-85.667049,-99.47259)"
              sodipodi:nodetypes="szszs"
